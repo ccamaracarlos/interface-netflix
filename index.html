@@ -5,17 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
-    <title>LEARNINGFLIX</title>
+    
+     <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">    
+
+
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <title>TURISMOLIX</title>
 </head>
 <body>
      <header>
         <div class="container">
-            <h2 class="logo">LEARNINGFLIX</h2>
+            <h2 class="logo">TURISMOFLIX</h2>
             <nav>
-                <a href="#">inicio</a>
-                <a href="#">Cursos</a>
-                <a href="#">Formação</a>
-                <a href="#">Categorias</a>
+                <a href="#">Início</a>
+                <a href="#">Trilhas</a>
+                <a href="#">Passeios</a>
+                <a href="#">Secretos</a>
             </nav>
         </div>
      </header>
@@ -23,10 +32,44 @@
      <main>
         <div class="img-principal">
             <div class="container">
-                <h3 class="titulo">MC ABRAÃOZINHO</h3>
-                <p class="descricao">Passeios exclusivos  e coletivos pelas mais belas praias da ilha grande - Mc Abraãozinho</p>
-            </div>
+                <h3 class="titulo">BEM-VINDOS AO ÉDEM</h3>
+                <p class="descricao">Um grupo de jovens vai a uma festa em uma ilha paradisíaca, e descobre segredos, perigos e verdadeiras aventuras. Venha conhecer sua maior aventura, quique em Ir Para Ilha, ou planeje sua viagem, Clique em Saiba Mais, que vamos planejar juntos - A ILHA.</p>
+                <div class="botoes">
+                    <button role="button" class="botao">
+                        <i class="fa-solid fa-person-running"></i>
+                        IR PARA ILHA AGORA
+                        <i class="fa-solid fa-person-running"></i>                        
+                    </button>
+                    <button role="button" class="botao">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        PLANEJAMENTO ILHA
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </button>
+                </div>
+
+            </div>            
         </div>
      </main>
+     <div class="carrosel-praias">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-praias" src="/img/10.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-praias" src="/img/13.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-praias" src="/img/14.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-praias" src="/img/15.jpg" alt="" srcset="">
+            </div>
+        </div>           
+     </div>
+
+     <script src="https://kit.fontawesome.com/9c8d791b77.js" crossorigin="anonymous"></script>
+     <script src="js/owl/jquery.min.js"></script>
+     <script src="js/owl/owl.carousel.min.js"></script>
+     <script src="js/owl/setup.js"></script>
 </body>
 </html>

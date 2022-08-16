@@ -11,13 +11,14 @@
 
 /*elementos base*/
 body {
-    background-image: url(/img/ilha1.jpeg);
+  /*  background-image: url(/img/ilha1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    font-family: 'Times New Roman', Times, serif;
-    color: #141414;
+    background-attachment: fixed;*/
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: rgb(255, 255, 255);
 }
 
 header .container {
@@ -30,23 +31,75 @@ header .logo {
     margin-left: 5px;
     color: var(--vermelha);
     font-family: 'Arial Black' Times;
-    font-size: 40px;
+    font-size: 40px;   
 }
 
 header nav a{
     text-decoration: none;
-    color: #AAA;
+    color: white;
     margin-right: 10px;
 }
 
-header nav a :hover{
-    color: #fff;
+header nav a:hover{
+    color: var(--vermelha);
 }
 
-
-/*.img-principal {
-    font-size: 16px;
-    background: url(/img/mcabraaozinho.jfif);
+/*IMG-PRINCIPAL*/
+.img-principal {
+    font-size: 17px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/img/bemvindo-aoEden.jpg);
     height: 400px;
     background-size: cover;
-}*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.img-principal .descricao {
+    margin-bottom: 40px;
+}
+
+.titulo {
+    margin-top: 30%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .4s ease all;
+    margin-bottom: 50px;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.container {
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.img-principal .container {
+    width: 60%;
+}
+
+.box-praias {
+    margin-top: 2px;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
