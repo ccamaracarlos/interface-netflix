@@ -1,0 +1,52 @@
+:root{
+    --vermelha: #E50914;
+    --preta:#141414;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body {
+    background-image: url(/img/ilha1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif;
+    color: #141414;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+} 
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelha);
+    font-family: 'Arial Black' Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a :hover{
+    color: #fff;
+}
+
+
+/*.img-principal {
+    font-size: 16px;
+    background: url(/img/mcabraaozinho.jfif);
+    height: 400px;
+    background-size: cover;
+}*/
