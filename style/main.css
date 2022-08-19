@@ -1,5 +1,5 @@
 :root{
-    --vermelha: #E50914;
+    --vermelha: white;
     --preta:#141414;
 }
 
@@ -11,12 +11,12 @@
 
 /*elementos base*/
 body {
-  /*  background-image: url(/img/ilha1.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/img/ilha1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;*/
-    background: var(--preta);
+    background-attachment: fixed;
+  /*  background: var(--preta);*/
     font-family: 'Arial', Times, serif;
     color: white;
 }
@@ -31,24 +31,24 @@ header .container {
 header .logo {
     margin-left: 5px;
     color: var(--vermelha);
-    font-family: 'Arial Black', Times;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
 }
 
 header nav a{
     text-decoration: none;
-    color: white;
+    color: var(--vermelha);
     margin-right: 10px;
 }
 
 header nav a:hover{
-    color: var(--vermelha);
+    color: black;
 }
 
 /*Iimg-principal*/
 .img-principal {
     font-size: 17px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/img/bemvindo-aoEden.jpg);
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/img/passeio\ de\ barco3.jpg);
     height: 400px;
     background-size: cover;
 
@@ -65,7 +65,8 @@ header nav a:hover{
 .img-principal .titulo {
     margin-top: 15%;
     font-size: 40px;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif ;
+    color: #24ebc0;
 }
 
 .botao {
@@ -106,6 +107,64 @@ header nav a:hover{
 }
 
 .carrosel-praias {
-    margin-top: 5px;
+    margin-top: 55px;
     margin-bottom: 10px;
+}
+
+/*Iimg2-segundo bloco*/
+.block2 {
+    font-size: 17px;   /* tamanho da fonte  */
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/img/mcabraaozinho.jfif);
+    height: 1500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 55px;
+    margin-bottom: 200px;
+}
+
+/*Iimg3-terceiro bloco*/
+.block3 {
+    font-size: 17px;   /* tamanho da fonte  */
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/img/7.jpg);
+    height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 55px;
+    margin-bottom: 200px;
+}
+
+/*Iimg3-terceiro bloco*/
+.container4 {
+    font-size: 14px;   /* tamanho da fonte  */
+    height: 90px;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items:flex-start;
+    margin-top: 70px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer .container4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:safe;
+} 
+
+ footer {
+    background:  linear-gradient(rgba(0,0,0,.80),rgba(0,0,0,.50)100%);
+    
 }
